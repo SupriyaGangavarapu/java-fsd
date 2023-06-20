@@ -35,28 +35,18 @@ public class ArithmeticCalculator {
         double num1,num2;
         Scanner sc = new Scanner (System.in);
         System.out.println("first number is:");
-		num1=sc.nextDouble();
-		System.out.println("second number is:");
-		num2 = sc.nextDouble();
-       
-
+	num1=sc.nextDouble();
+	System.out.println("second number is:");
+	num2 = sc.nextDouble();
         ArithmeticCalculator calculator = new ArithmeticCalculator(num1, num2);
-
         double addition = calculator.add();
         System.out.println("Addition result: " + addition);
-
         double subtraction = calculator.subtract();
         System.out.println("Subtraction result: " + subtraction);
-
-        double multiplication = calculator.multiply();
+	double multiplication = calculator.multiply();
         System.out.println("Multiplication result: " + multiplication);
-
-        try {
-            double division = calculator.divide();
-            System.out.println("Division result: " + division);
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-        }
+        double division = calculator.divide();
+        System.out.println("Division result: " + division);
     }
 }
 
